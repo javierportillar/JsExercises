@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <button class="btn">Oprimeme para acción</button>
-    <input type="text" class="height"> Alto del Triangulo
-    <input type="text" class="width"> Ancho del Triangulo
+    <button class="equilateral">Triangulo equilátero</button>
+    <button class="isosceles">Triangulo isósceles</button>
+<div class="equilateral-option active">
+    <input type="text" class="height"> Alto del triangulo
+    <input type="text" class="width"> Ancho del triangulo
+</div>
+<div class="isosceles-option inactive">
+    <input type="text" class="a-side"> Lado a del triangulo
+    <input type="text" class="b-side"> Lado b del triangulo
+    <input type="text" class="c-side"> Lado c del triangulo
+</div>
     <p class="answ"></p>
     <script src="index.js"></script>
 </body>
