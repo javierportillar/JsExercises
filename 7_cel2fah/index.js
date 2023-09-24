@@ -11,12 +11,4 @@ function c2f() {
   let f= (c*9/5)+32;
   console.log(`°${c} Celcius equivale a: ${f} Fahrenheit`);
   answ.innerText = `${c}° Celcius equivale a: ${f} Fahrenheit`;
-  
-  /* Para hacerlo sin variable temporal
-  a=a+b;
-  b=a-b
-  a=a-b  
-  */
-
-
 }
