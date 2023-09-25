@@ -1,1 +1,1 @@
-Generate a random number
+Odd or even number
