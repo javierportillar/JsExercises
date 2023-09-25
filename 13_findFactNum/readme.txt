@@ -1,1 +1,1 @@
-Find max number of an array
+Factorial of an number
