@@ -1,1 +1,1 @@
-Identify if last digit of 2 numbers are the same
+Checking if word is palindorme also by loop
