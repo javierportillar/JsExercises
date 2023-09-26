@@ -26,5 +26,3 @@ function palinWord() {
     }
   }
 }
-
-// 153, 370, 371 son numeros Armstrong
