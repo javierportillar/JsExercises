@@ -1,1 +1,1 @@
-Print the table of any number up to X10
+Find Armstrong number
