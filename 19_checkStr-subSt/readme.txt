@@ -1,0 +1,1 @@
+Checking if word begins and ends with a character
