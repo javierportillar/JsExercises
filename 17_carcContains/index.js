@@ -17,12 +17,20 @@ function palinWord() {
 
   let result = word.includes(letterText);
   // console.log(result);
+  var numOfOcu = 0;
 
   if (result) {
     console.log(`La palabra ${letterText} Si está dentro de ${word}`);
   } else {
     console.log(`La palabra ${letterText} NO está dentro de ${word}`);
   }
+
+  for (let i = 0; i <= word.length; i++) {
+    if (letterText === wordSplit[i]) {
+      numOfOcu ++;
+    }
+  }
+  console.log(`La letra ${letterText} se repite ${numOfOcu} veces`);
 
   // Se revisa si la palabra a buscar está contenida en la palabra principal
   for (let i = 0; i < word.length; i++) {
