@@ -6,6 +6,7 @@ const answ = document.querySelector(".answ");
 btn.addEventListener("click", sumNatNumbers);
 var acum = 0;
 function sumNatNumbers() {
+  acum=0;
   const numValue = parseInt(num.value);
   let result = suma(numValue);
   console.log(`Si restamos a ${numValue}, 1 unidad hasta llegar a 0 y sumanos su restante
