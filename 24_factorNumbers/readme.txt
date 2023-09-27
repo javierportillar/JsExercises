@@ -1,1 +1,1 @@
-Find Armstrong number on an interval
+Find factors of a number
