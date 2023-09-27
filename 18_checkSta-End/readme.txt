@@ -1,1 +1,1 @@
-Checking if word is inside another word
+Checking if word begins and ends with a character
