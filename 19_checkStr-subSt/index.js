@@ -1,7 +1,6 @@
 const btn = document.querySelector(".btn");
 const wordA = document.querySelector(".number-a");
-const letterA = document.querySelector(".number-b");
-const letterB = document.querySelector(".number-c");
+const letter = document.querySelector(".number-b");
 //Cuadro de respuesta
 const answ = document.querySelector(".answ");
 
@@ -10,25 +9,35 @@ var wordIdentified = [];
 
 function palinWord() {
   const word = wordA.value.toLowerCase(); //Convertir text a lowerCase
-  const letterTextA = letterA.value.toLowerCase();
-  const letterTextB = letterB.value.toLowerCase();
-  let resultStart = word.startsWith(letterTextA);
-  let resultEnd = word.endsWith(letterTextB);
+  const letterText = letter.value.toLowerCase(); // Separar carcarteres, Invertir caracteres y unir caracteres
+  const wordSplit = word.split("");
 
-  if (resultStart && letterTextA !== "") {
-    console.log(`La palabra ${word} inicia con la letra ${letterTextA}`);
+  const letterTextSplit = letterText.split("");
+  let allLettersFound = false;
+
+  let result = word.includes(letterText);
+
+  if (result) {
+    console.log(`La palabra ${letterText} Si está dentro de ${word}`);
   } else {
-    if (letterTextA == "") {
+    console.log(`La palabra ${letterText} NO está dentro de ${word}`);
+  }
+
+  // Se revisa si la palabra a buscar está contenida en la palabra principal
+  for (let i = 0; i < word.length; i++) {
+    if (letterTextSplit[i] !== wordSplit[i]) {
+      break;
     } else {
-      console.log(`La palabra ${word} NO inicia con la letra ${letterTextA}`);
+      wordIdentified.push(letterTextSplit[i]);
+      allLettersFound = true;
     }
   }
-  if (resultEnd && letterTextB !== "") {
-    console.log(`La palabra ${word} termina con la letra ${letterTextB}`);
+
+  if (allLettersFound && letterTextSplit.length === wordIdentified.length) {
+    console.log(`La palabra ${wordIdentified.join("")} ESTÁ dentro de ${word}`);
   } else {
-    if (letterTextB == "") {
-    } else {
-      console.log(`La palabra ${word} NO termina con la letra ${letterTextB}`);
-    }
+    console.log(`La palabra ${letterText} NO ESTÁ dentro de ${word}`);
   }
+
+  wordIdentified = [];
 }

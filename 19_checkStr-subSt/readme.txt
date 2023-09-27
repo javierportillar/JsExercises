@@ -1,1 +1,1 @@
-Checking if word begins and ends with a character
+Checking if word contains certain character with includes and with function loop
