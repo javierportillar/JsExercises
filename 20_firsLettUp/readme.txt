@@ -1,0 +1,1 @@
+Convert first letter fo a string in to uppercase
