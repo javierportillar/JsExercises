@@ -1,0 +1,19 @@
+/* Agrega estilos para el diseño de las etiquetas y los campos de entrada */
+label {
+    display: block; /* Muestra cada etiqueta en una nueva línea */
+    margin-bottom: 5px; /* Espacio entre etiquetas */
+  }
+  
+  input[type="text"] {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    display: block;
+    margin-top: 10px;
+  }
+  
+
+  
